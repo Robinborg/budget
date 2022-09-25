@@ -2,7 +2,7 @@ using System;
 
 namespace Costs
 {
-	public class Cost
+	public class Cost : ICost
 	{
 		public double rent {get; set;}
 		public double food {get; set;}

@@ -13,7 +13,11 @@ namespace Budgets
 
 		public int daysInMonth {get; set;}
 
-		public Cost cost = new Cost();
+		public ICost cost;
+		public Budget(ICost cost)
+		{
+			this.cost = cost;
+		}
 
 		public double costOverDays(double cost, int daysSplitOver)
 		{

@@ -1,4 +1,5 @@
 ﻿using System;
+using Costs;
 
 namespace Budgets
 {
@@ -6,7 +7,7 @@ namespace Budgets
 	{
 	  public static void Main(string[] args)
 	  {
-			Budget budget = new Budget();
+			Budget budget = new Budget(new Cost());
 			budget.monthlyEarnings = 1350;
 			budget.daysInMonth = 30;
 			budget.addCosts(650.00, "rent");
